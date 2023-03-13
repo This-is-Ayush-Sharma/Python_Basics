@@ -23,3 +23,11 @@ for i in range(2,101,2):
     print(i, end=' ')
 
 print()
+
+
+
+# reverse order
+print("Number from range 100 to 1")
+for i in range(100, 0, -1):
+    print(i, end=' ')
+print()
