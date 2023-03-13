@@ -44,7 +44,7 @@ print()
 print("Number from range 100 to 1 Even Number Reverse Order")
 for i in range(100,0,-2):
     print(i, end=' ')
-
-print()
+else:
+    print()
 
 
