@@ -8,6 +8,8 @@ def function1():
     print("Function 1")
 function1()
 
+# print() __str__  magical object to convert everything to string and pass the value as parameter
+
 # with parameters
 def function2(num1, num2):
     print("num1",num1,"num2",num2)
