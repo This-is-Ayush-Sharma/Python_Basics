@@ -35,3 +35,12 @@ def function4(*var):
         print()
 function4(2,3,5,6)
 function4(2,3,5,6,7,8,9)    
+
+def add(*var):
+    sum = 0
+    for i in var:
+        sum+=i
+    else:
+        print("Sum:-",sum)
+add(2,3,5,6)
+add(2,3,5,6,7,8,9)  
