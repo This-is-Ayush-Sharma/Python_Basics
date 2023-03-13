@@ -1,5 +1,7 @@
 # Python Programming
 
+#  print (*number of objects , sep = ' ' , end='\n')
+
 
 #data Types
 
