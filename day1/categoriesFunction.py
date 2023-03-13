@@ -26,3 +26,12 @@ def function3(name , rollno, branch, collegename = "GIET"):
 
 function3("ayush", 11, "CSE")
 function3("Venu", 13, "CST")
+
+# function4 function can accept any number of arguments
+def function4(*var):
+    for i in var:
+        print(i,end=' ')
+    else:
+        print()
+function4(2,3,5,6)
+function4(2,3,5,6,7,8,9)    
