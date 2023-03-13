@@ -22,3 +22,16 @@ for i in range(1, 101):
     print(i, end = ' ')
 
 print()
+
+
+# Pass
+# null satement 
+# used for creating empty classes or writing null statement
+
+print("Example of pass")
+for i in range(1, 101):
+    if(i == 50):
+        pass     # used for empty statement
+    print(i, end = ' ')
+
+print()
