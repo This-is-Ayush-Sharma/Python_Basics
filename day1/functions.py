@@ -14,3 +14,9 @@ function1()
 def function2(num1, num2):
     print("num1",num1,"num2",num2)
 function2(10,30)
+
+
+# with parameters with return type
+def function3(num1, num2):
+    return num1 + num2
+print("Value returned", function3(10,30))
