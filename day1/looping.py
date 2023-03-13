@@ -1,7 +1,7 @@
 # for loop
 
 # range function
-
+# range(start, end, step)
 
 # number from 1 to 100
 print("Number from range 1 to 100 all")
