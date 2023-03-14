@@ -1,10 +1,10 @@
 
 
-def translate(list, dict):
-    print("Message in English:-",' '.join(list))
+def translate(lists, dicts):
+    print("Message in English:-",' '.join(lists))
     print("Message in Swedish:-",end=' ')
-    for i in list:
-        print(dict[i],end= ' ')
+    for i in lists:
+        print(dicts[i],end= ' ')
     
 
 translate(["merry","christmas","and","happy","new","year"],
