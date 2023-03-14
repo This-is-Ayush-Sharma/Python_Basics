@@ -9,6 +9,6 @@ def Add(s):
             s=s+"ing"
         print(s)
 
-Add("sleep")
-Add("amazing")
-Add("is")
+Add("sleep")   # sleeping
+Add("amazing") # amazingly
+Add("is")      # is
