@@ -14,9 +14,10 @@ def generate_fequency(tup):
     return x
 
 def sort_marks(tup):
-    lists = list(tup)
-    lists.sort()
-    return lists
+    # tup.sorted()
+    # lists = list(tup)
+    # lists.sort()
+    return sorted(tup)
 
 print(find_more_than_average((12,18,25,24,2,5,18,20,20,21)))
 print(generate_fequency((12,18,25,24,2,5,18,20,20,21)))
