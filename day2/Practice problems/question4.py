@@ -4,9 +4,9 @@ def Add(s):
         print(s)
     else:
         if(s[-3:] == "ing"):
-            s=s+"ly"
+            s+="ly"
         else:
-            s=s+"ing"
+            s+="ing"
         print(s)
 
 Add("sleep")   # sleeping
