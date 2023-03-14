@@ -6,9 +6,9 @@ int main()
 {
     string s = "";
     cout<< "Enter the message:- ";
-    cin >> s;
+    getline (cin, s);
 
-    s = "git commit -m" + s;
+    s = "git commit -m \"" + s +"\"";
     cout << s << endl;
     system("git add .");
     system(s.c_str());
