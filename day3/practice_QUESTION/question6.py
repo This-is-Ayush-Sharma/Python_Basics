@@ -10,10 +10,10 @@ def rotate(string, direction):
     print(string,direction)
     if(direction == 0):
         # rotate clockwise
-        print(string[len(string)-1]+string[0:len(string)-1])
+        print(string[-1]+string[:-1])
     else:
         # rotate antoclockWise
-        print(string[3:]+string[0:2])
+        print(string[2:]+string[:2])
 arr = "rhdt:246,ghftd: 1246".split(",")
 
 for i in arr:
