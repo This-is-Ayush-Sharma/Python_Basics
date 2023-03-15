@@ -62,5 +62,5 @@ mat = [
         [9,10,11,12], 
         [13,14,15,16]
     ]
-support = [[j**3 if(j%2 == 0) else j**2 for j in i] for i in mat] 
-print("after change", support)
+mat = [[j**3 if(j%2 == 0) else j**2 for j in i] for i in mat] 
+print("after change", mat)
