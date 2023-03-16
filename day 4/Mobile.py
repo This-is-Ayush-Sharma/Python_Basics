@@ -9,3 +9,5 @@ class Mobile:
         print("Calculating the price")
 
 Mobile().purchase()
+Mobile().purchase()
+Mobile().purchase()
