@@ -17,6 +17,18 @@ def find_Factor(n):
 n = int(input())
 sum = 0
 for i in range(n,n+9):
+    print(i,find_Factor(i))
     sum+=find_Factor(i)
 
 print(sum)
+
+
+# 10 5
+# 11 11
+# 12 3
+# 13 13
+# 14 7
+# 15 5
+# 16 2
+# 17 17
+# 18 3
