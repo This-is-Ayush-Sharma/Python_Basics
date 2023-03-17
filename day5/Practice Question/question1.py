@@ -1,8 +1,8 @@
 class WeCare:
-    def __init__(self):
-        self.__id = None
-        self.__type = None
-        self.__cost = None
+    def __init__(self, id, type, cost):
+        self.__id = id
+        self.__type = type
+        self.__cost = cost
         self.__premium_amount = None
 
     def getter_Id(self):
@@ -36,10 +36,7 @@ class WeCare:
         else:
             self.__premium_amount = "Invalid Vehicle Type"
 
-obj = WeCare()
-obj.setter_Id(123)
-obj.setter_Type("Four Wheeler")
-obj.setter_Cost(123343)
+obj = WeCare(123, "Four Wheeler", 123445) 
 obj.Calculate_premium_amount()
 obj.getter_Id()
 obj.getter_Type()
