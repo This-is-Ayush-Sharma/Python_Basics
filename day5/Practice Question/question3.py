@@ -1,56 +1,38 @@
+types = ['small','Small','medium','Medium']
+
 class Customer:
-    def __init__(self,quantity):
-        self.quantity = quantity
-    def validate_quantity(self):
-        if(self.quantity >= 1 and  self.quantity <= 5):
-            return True
-        return False
-    
-class PizzaService(Customer):
-    counter = 100
+    def __init__(self, customer, name, qunatity):
+        self.__customer_name = name.title()
+        self.__quantity = qunatity
 
-    def __init__(self, quantity, type, toppings):
-        Customer.__init__(self, quantity)
-        self.type = type
-        self.topping = toppings
-        self.cost = None
-
-    def validate_pizza_type(self):
-        if((self.type == "small" or self.type == "medium") and self.validate_quantity()):
-            return True
-        return False
-    
-    def Calculate_pizza_cost(self):
-        PizzaService.counter+=1
-        print(f"S{PizzaService.counter}")
-        print("------Testing------")
-        if(self.type == "small" and self.topping == True):
-            self.cost = 150+35
-        elif(self.type == "small" and self.topping == False):
-            self.cost = 150
-        if(self.type == "medium" and self.topping == True):
-            self.cost = 200+50
-        elif(self.type == "medium" and self.topping == False):
-            self.cost = 200
-        else:
-            self.cost = -1
-
-
-class Doordelivery(PizzaService):
-
-    def __init__(self,distance):
-        self.distance_in_kms = distance
-    
-    def validate_distance_in_kms(self):
-        if(self.distance_in_kms >=1 and self.distance_in_kms <= 10):
+    def Validate_Quantity(self):
+        if(self.__quantity in range(1,6)):
             return True
         else:
             return False
-        
+    
+    def get_Customer_Name(self):
+        return self.__customer_name
+    
+    def get_Qunatity(self):
+        return self.__quantity
+    
+class PizzaService:
+    counter = 100
 
-Pizza_Service = PizzaService(4,"small",True)
-Pizza_Service.Calculate_pizza_cost()
-print(Pizza_Service.cost)
-# Door_Step_Delevary = Doordelivery()
+    def __init__(self, customer, pizza_type, additional_toppings):
+        self.__customer = customer
+        self.__pizza_type = pizza_type
+        self.__additional_toppings = additional_toppings
+        self.pizza_cost = 0
+        self.__service_id = None
+
+    def Validate_Pizza_Type(self):
+        if(self.__pizza_type.lower() in types):
+            return True
+        return False
     
-    
+    def Calculate_Pizza_Cost(self):
+        if(self.Validate_Pizza_Type() and Customer.Validate_Quantity(self.__customer)):
+            self.pizza_cost = 150 * Customer.get_Qunatity(self.__customer)
+
