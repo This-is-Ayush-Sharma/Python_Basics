@@ -1,0 +1,8 @@
+LIFO :- Last in first out 
+
+operation
+    isempty check whether the stack has no elements
+    isfull check whether the stack is full 
+    push insert a element 
+    pop remove top element
+
