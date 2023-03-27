@@ -1,0 +1,6 @@
+Queue:- 
+
+First in first out 
+
+operations
+ 
