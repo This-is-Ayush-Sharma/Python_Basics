@@ -1,0 +1,6 @@
+b = LinkedList()
+b.insert_At_end(9)
+b.insert_At_end(8)
+b.insert_At_end(11)
+print("Second Linked List")
+b.printList()

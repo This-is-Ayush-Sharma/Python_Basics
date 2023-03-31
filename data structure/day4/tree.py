@@ -32,6 +32,32 @@ def Insert(node, key):
     else:
         node.right = Insert(node.right, key)
     return node
+def minValueNode(node):
+    current = node
+    while current.left is not None:
+        current = current.left
+    return current
+
+def delete(root, key):
+    if(root is None):
+        return root
+    if(key < root.val):
+        root.left = delete(root.left, key)
+    elif(key > root.val):
+        root.right = delete(root.right, key)
+    else:
+        if(root.left is None):
+            temp = root.right
+            root = None
+            return temp
+        elif(root.right is None): 
+            temp = root.left
+            root= None
+            return temp
+        temp = minValueNode(root.right)
+        root.val = temp.val
+        root.right = delete(root.right, temp.val)
+    return root
         
 root = None
 root = Insert(root,8)
@@ -49,6 +75,8 @@ root = Insert(root,4)
 # root.left.right = Node(5)
 
 # root.right = Node(3)
+
+delete(root, 3)
 
 print("InOrder",end=' ')
 inOrder(root)
