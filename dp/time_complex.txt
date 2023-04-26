@@ -1,0 +1,12 @@
+time complexity
+
+the amount of time taken by an algorithm to run as a function of the length of the input 
+
+asymptotic notation
+running time or space complexity based on the input size 
+
+1. big o notation 
+    - worst case time complexity 
+    - its the max amt of time req to consider all the input
+
+ 
